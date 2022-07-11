@@ -212,8 +212,8 @@ class Scratch3TM2ScratchBlocks {
 
         const media = navigator.mediaDevices.getUserMedia({
             video: {
-                width: 360,
-                height: 360
+                width: {min: 480, ideal: 640},
+                height: {min: 360, ideal: 480}
             },
             audio: false
         });
